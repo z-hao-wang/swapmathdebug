@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": false,
+    "lib": [ "es2015" ],
+    "noEmitOnError": true,
+    "target": "ES6",
+    "strict": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist",
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@config/*": ["config/*"],
+      "@controllers/*": ["controllers/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}
