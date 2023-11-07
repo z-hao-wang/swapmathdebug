@@ -50,4 +50,4 @@ export async function main() {
 }
 
 main();
-// node dist/scripts/testSwapMath.js
+// npm test
