@@ -10,7 +10,9 @@
     "prettier": "node ./node_modules/prettier/bin-prettier.js --parser=typescript --single-quote --trailing-comma=all --write --print-width=120 '**/*.ts'",
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
-    "test": "tsc && node dist/testSwapMath.js"
+    "test": "tsc && node dist/testSwapMath.js",
+    "build": "cd v3-sdk && npm run build && cp dist/*.js ../node_modules/@uniswap/v3-sdk/dist",
+    "copy": "cd v3-sdk && cp dist/*.js ../node_modules/@uniswap/v3-sdk/dist"
   },
   "ava": {
     "nodeArguments": [
